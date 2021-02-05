@@ -4,6 +4,8 @@ import Burger from '../../Burger/Burger';
 import BuildControls from '../../Burger/BuildControls/BuildControls';
 import Modal from '../../UI/Modal/Modal';
 import OrderSummary from '../../Burger/OrderSummary/OrderSummary' ;
+import PropTypes from 'prop-types';
+import BurgerIngredient from '../../Burger/BurgerIngredient/BurgerIngredient';
 
 const INGREDIENT_PRICES = {
     salad: 0.5,
@@ -118,5 +120,10 @@ class BurgerBuilder extends Component {
     }
 }
 
+BurgerIngredient.PropTypes = {
+    type: PropTypes.string.isRequired
+};
+
 
 export default BurgerBuilder;
+
